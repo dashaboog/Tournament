@@ -1,8 +1,7 @@
 package ru.netology.org;
 
-import junit.framework.Assert;
 import org.junit.jupiter.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class GameTest {
 
@@ -24,7 +23,7 @@ public class GameTest {
         int expected = game.round("Dasha", "Marina");
         int actual = 1;
 
-        Assert.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -35,7 +34,7 @@ public class GameTest {
         int expected = game.round("Mark", "Anton");
         int actual = 2;
 
-        Assert.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -46,7 +45,7 @@ public class GameTest {
         int expected = game.round("Anton", "Katya");
         int actual = 0;
 
-        Assert.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
