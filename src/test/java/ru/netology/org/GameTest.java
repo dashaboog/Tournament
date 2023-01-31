@@ -77,4 +77,18 @@ public class GameTest {
             game.round("", "");
         });
     }
+
+    @Test
+    public void Finder() {
+        game.register(Dasha);
+        game.register(Ilia);
+        game.register(Marina);
+        game.register(Mark);
+        game.register(Irina);
+
+        Boolean expected = game.contain(Irina);
+        Boolean actual = true;
+
+        Assertions.assertEquals(expected, actual);
+    }
 }

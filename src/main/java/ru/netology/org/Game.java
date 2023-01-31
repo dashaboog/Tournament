@@ -1,9 +1,15 @@
 package ru.netology.org;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Game {
-    private ArrayList<Player> players = new ArrayList<Player>();
+    HashSet<Player> players = new HashSet<>();
+
+    public boolean contain(Player player) {
+        players.contains(player);
+        return true;
+    }
+
 
     public void register(Player player) {
         players.add(player);
